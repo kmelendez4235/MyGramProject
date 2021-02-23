@@ -70,3 +70,20 @@ myDiv.appendChild(newSpan);
 var x = 5; //Number
 var y = "May the Force be with you"; //String
 var z = 'Second string line'; //String
+
+console.log(x);
+console.log(y);
+console.log(z);
+
+var a = 22;
+var b = 7;
+var c = a > b;
+
+
+function firstFunction() {
+    console.log(c);
+}
+
+firstFunction();
+
+

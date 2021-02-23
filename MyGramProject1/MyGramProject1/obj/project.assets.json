@@ -661,11 +661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/krismelendez/Desktop/MyGramProject/MyGramProject1/MyGramProject1/MyGramProject1.csproj",
+      "projectUniqueName": "/Users/krismelendez/Desktop/New Gram/MyGramProject1/MyGramProject1/MyGramProject1.csproj",
       "projectName": "MyGramProject1",
-      "projectPath": "/Users/krismelendez/Desktop/MyGramProject/MyGramProject1/MyGramProject1/MyGramProject1.csproj",
+      "projectPath": "/Users/krismelendez/Desktop/New Gram/MyGramProject1/MyGramProject1/MyGramProject1.csproj",
       "packagesPath": "/Users/krismelendez/.nuget/packages/",
-      "outputPath": "/Users/krismelendez/Desktop/MyGramProject/MyGramProject1/MyGramProject1/obj/",
+      "outputPath": "/Users/krismelendez/Desktop/New Gram/MyGramProject1/MyGramProject1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/krismelendez/.config/NuGet/NuGet.Config"
