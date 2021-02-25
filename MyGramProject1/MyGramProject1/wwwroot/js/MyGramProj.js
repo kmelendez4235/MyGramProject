@@ -80,10 +80,35 @@ var b = 7;
 var c = a > b;
 
 
+
 function firstFunction() {
     console.log(c);
 }
 
 firstFunction();
+
+
+var f = '"A long time ago in a galaxy far, far away."'; //String
+
+console.log(f);
+
+var g = '"\t   A long time ago in a galaxy far, far away.\t   "'; //tabstring
+
+console.log(g);
+
+var h = '"  A long time ago in a galaxy far, far away."';  //sub
+var j = h.substring(0, 4);
+
+console.log(j);
+
+var k = '     "A long time ago in a galaxy far, far away."    '; //Trimstring
+var l = k.trim();
+
+console.log(l);
+
+
+
+
+
 
 
