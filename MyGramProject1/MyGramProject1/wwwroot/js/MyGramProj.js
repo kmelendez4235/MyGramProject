@@ -106,6 +106,15 @@ var l = k.trim();
 
 console.log(l);
 
+"use strict";
+
+var date = new Date("June 13,2018 11:11:01");
+
+document.write(date);
+
+var date = new Date("June 9,2018 11:11:01");
+
+document.write(date.getTime());
 
 
 
