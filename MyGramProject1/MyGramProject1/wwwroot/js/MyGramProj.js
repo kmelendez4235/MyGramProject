@@ -106,15 +106,44 @@ var l = k.trim();
 
 console.log(l);
 
+
+
+
 "use strict";
 
-var date = new Date("June 13,2018 11:11:01");
+var date = new Date(2017, 10, 7);
 
-document.write(date);
+document.write(date.getMonth() +
+    "/" +
+    date.getDate() +
+    "/" +
+    date.getFullYear()); //10/7/2017
 
-var date = new Date("June 9,2018 11:11:01");
 
-document.write(date.getTime());
+"use strict";
+
+var date = new Date(2017, 10, 7);
+
+document.write(date.toLocaleString("ta-IN"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
