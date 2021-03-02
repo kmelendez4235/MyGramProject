@@ -119,34 +119,49 @@ document.write(date.getMonth() +
     "/" +
     date.getFullYear()); //10/7/2017
 
+document.write("<br>");
 
-"use strict";
 
-var date = new Date(2017, 10, 7);
+
+var date = new Date(2022, 3, 7);
+
+document.write((date.getMonth() + 1).toString()
+    .padStart(2, "0")
+    +
+    "/" +
+    date.getDate().toString().padStart(2, "0") +
+    "/" +
+    date.getFullYear());
+
+document.write("<br>");
+
 
 document.write(date.toLocaleString("ta-IN"));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.write("<br>");
+ 
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
