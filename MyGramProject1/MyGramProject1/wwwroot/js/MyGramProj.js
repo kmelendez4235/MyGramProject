@@ -139,7 +139,32 @@ document.write("<br>");
 document.write(date.toLocaleString("ta-IN"));
 
 document.write("<br>");
- 
+
+
+
+var m = moment().format("MM/DD/yyyy h:mm:ss");
+
+document.write(m);
+
+document.write("<br>");
+
+
+var q = new Date(1999, 12, 11);
+var r = new Date(1995, 11, 12);
+var s = q > r;
+
+switch (s) {
+    case false:
+        document.write("Second date is greater");
+        break;
+        case true:
+        document.write("First date is greater");
+        break;
+    default:
+        document.write("I don't recognixe this option");
+        break;
+}
+
     
     
     
