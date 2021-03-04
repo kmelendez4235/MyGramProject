@@ -28,6 +28,11 @@ namespace MyGramProject1.Controllers
             return View();
         }
 
+        public IActionResult Register()
+        {
+            return View("_TestView");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -35,3 +40,4 @@ namespace MyGramProject1.Controllers
         }
     }
 }
+ 
