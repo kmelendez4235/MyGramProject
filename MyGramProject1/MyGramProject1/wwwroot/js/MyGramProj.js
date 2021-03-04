@@ -14,7 +14,7 @@ newSpan.innerHTML = "Sign Up";
 myDiv.appendChild(newSpan);
 
 
-
+//M7
 
 "use strict";
 
@@ -24,7 +24,7 @@ var td = null;
 var span = null;
 var counter = 1; 
 
-for (var i = 1; i <= 25; i++) {
+for (var i = 1; i <= 30; i++) {
 
 
     if (counter == 6) {
