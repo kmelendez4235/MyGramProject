@@ -14,9 +14,11 @@ newSpan.innerHTML = "Sign Up";
 myDiv.appendChild(newSpan);
 
 
-//M7
+//M7 and M8
 
 "use strict";
+
+var image = new Image("Image");
 
 var tBody = document.getElementById("Image");
 var tr = document.createElement("tr"); 
@@ -37,12 +39,13 @@ for (var i = 1; i <= 30; i++) {
 
     td = document.createElement("td");
     span = document.createElement("span");
-    span.innerHTML = "Image " + i;
+    span.innerHTML = image.imageName + i.toString();
     td.appendChild(span);
     tr.appendChild(td);
 
     counter++;
 }
+
 
 
 
