@@ -30,7 +30,7 @@ namespace MyGramProject1.Controllers
 
         public IActionResult Register()
         {
-            return View("_TestView");
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,45 +1,72 @@
 ﻿<h3>User personal information</h3>
-
-<tr>
-    <td>
-        <form>
-            First Name:<input type="firstname" name="firstname" />
-        </form>
-
-        <form>
-            Last Name:<input type="lastname" name="lastname" />
-        </form>
-    </td>
-</tr>
-  
 <form>
-    Gender:
-    <input type="radio" name="gender" value="male" />Male
-    <input type="radio" name="gender" value="female" />Female
-    <input type="radio" name="gender" value="Prefer not to Respond" />Prefer not to Respond<br />
+    <table>
+        <tbody>
+            <tr>
+                <td>
 
-    <form>
-        Email Address:<input type="email" name="email" />
+                    First Name:
+                </td>
+                <td>
+                    <input type="firstname" name="firstname" placeholder="Add your First Name"/>
+                </td>
+                <td>
+                    Last Name:</td>
+                <td>
+                    <input type="lastname" name="lastname" placeholder="Add your Last Name"/>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Gender:
+                </td>
+              
+                <td colspan="3">
+                    <input type="radio" name="gender" value="male" />Male
+                    <input type="radio" name="gender" value="female" />Female
+                    <input type="radio" name="gender" value="Prefer not to Respond" />Prefer not to Respond
+                <td />
+
+<tr/>
+            <tr>
+                <td>
+            Email Address:
+                </td>
+
+                <td>
+            <input type="email" name="email" placeholder="Add your Email Address" />
+
+                </td>
+            <tr/>
+
+            <tr>
+                <td>
+                    Country of Residence:
+                </td>
+                <td colspan="3">
+
+                    <input list="Countries">
+
+                    <datalist id="Countries">
+                        <option value="USA">Internet Explorer</option>
+                        <option value="Europe">Europe</option>
+                        <option value="China">China</option>
+                        <option value="India">India</option>
+                    </datalist>
+                </td>
+                <tr/>
+
+                <tr>
+                    <td colspan="4">
+                        <button>Update User Information</button>
+                    </td>
+                </tr>
+
+</tbody>
+    </table>
     </form>
 
-    <form …>
-       Country of Residence:
-        <input list="Countries">
 
-        <datalist id="Countries">
-            <option value="USA">Internet Explorer</option>
-            <option value="Europe">Firefox</option>
-            <option value="China">Chrome</option>
-            <option value="India">Opera</option>
-        </datalist>
-    </form>
-
-
-    <button>Update User Information</button>
-
-
-</form>
-
-
-
-<script src="~/js/Register.js" type="text/javascript"></script>
+    
