@@ -97,7 +97,7 @@ var td = document.createElement("td");
 var input = document.createElement("input");
 input.setAttribute("type", "text");
 input.setAttribute("name", "country");
-input.setAttribute("placeholder", "USA");
+input.setAttribute("placeholder", "Select");
 td.appendChild(input);
 tr.appendChild(td);
 tBody.appendChild(tr);
