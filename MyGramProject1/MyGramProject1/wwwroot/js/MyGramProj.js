@@ -14,7 +14,7 @@ newSpan.innerHTML = "Sign Up";
 myDiv.appendChild(newSpan);
 
 
-//M9
+//Module 9 
 
 "use strict";
 
@@ -71,6 +71,7 @@ cart.push(image23);
 cart.push(image24);
 cart.push(image25);
 
+
 var image;
 
 var tBody = document.getElementById("Image");
@@ -79,7 +80,7 @@ var td = null;
 var span = null;
 var counter = 1; 
 
-for (var i = 0; i <= cart.length; i++) {
+for (var i = 0; i < cart.length; i++) {
     image = cart[i];
 
 
@@ -94,6 +95,7 @@ for (var i = 0; i <= cart.length; i++) {
     td = document.createElement("td");
     span = document.createElement("span");
     span.innerHTML = image.imageName.toString();
+    span.className = "CustomImages";
     td.appendChild(span);
     tr.appendChild(td);
 
@@ -133,6 +135,15 @@ myDiv.appendChild(newSpan);
 var newSpan = document.createElement("span");
 newSpan.innerHTML = "MyGram";
 myDiv.appendChild(newSpan);
+
+//M10
+
+var imageArray = document.getElementsByClassName("CustomImages");
+for (var element in imageArray) {
+    imageArray[element].onclick = function () {
+        alert("This is an image");
+    }
+}
 
 
 
