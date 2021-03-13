@@ -94,11 +94,13 @@ td.innerHTML = "Country:";
 tr.appendChild(td);
 
 var td = document.createElement("td");
-var input = document.createElement("input");
-input.setAttribute("type", "text");
-input.setAttribute("name", "country");
-input.setAttribute("placeholder", "Select");
-td.appendChild(input);
+var select = document.createElement("select");
+
+var option = document.createElement("option");
+option.innerHTML = "USA";
+select.appendChild(option);
+
+td.appendChild(select);
 tr.appendChild(td);
 tBody.appendChild(tr);
 
