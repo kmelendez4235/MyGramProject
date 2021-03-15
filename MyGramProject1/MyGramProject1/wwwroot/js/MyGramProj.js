@@ -140,16 +140,18 @@ myDiv.appendChild(newSpan);
 
 //M10
 
-var imageArray = document.getElementsByClassName("CustomImages");
-for (var element in imageArray) {
-    imageArray[element].onclick = function () {
-        alert("This is an image");
-    }
+//var imageArray = document.getElementsByClassName("CustomImages");
+//for (var element in imageArray) {
+//    imageArray[element].onclick = function () {
+//      alert("This is an image");
+//    }
+//}
+
+
+var select = document.getElementById("theme");
+    select.onchange = function () {
+        alert("Theme has changed");
 }
-
-
-
-
 
 
 
