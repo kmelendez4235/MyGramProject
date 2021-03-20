@@ -6,7 +6,10 @@ myDiv.appendChild(newSpan);
 var myDiv = document.getElementById("maindiv");
 var newSpan = document.createElement("button");
 newSpan.innerHTML = "Log In";
-myDiv.appendChild(newSpan);
+var a = document.createElement("a");
+a.setAttribute("href", "/Home/Login");
+a.appendChild(newSpan);
+myDiv.appendChild(a);
 
 var myDiv = document.getElementById("maindiv");
 var newSpan = document.createElement("button");

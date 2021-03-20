@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+
+<div id="maindiv" class="container">
+    <form action="~/Home/LogUser" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>User:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="User"
+                               placeholder="Type your username" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="Password"
+                               placeholder="Type your Password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button>Log In</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+
+
+
+
