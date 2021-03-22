@@ -3,22 +3,25 @@ form.onsubmit = function (event) {
     event.preventDefault();
 }
 
-var loginButton = document.getElementById("Login");
+var loginButton = document.getElementById("LogUser");
 loginButton.onclick = function () {
     var userInput = document.getElementById("UserName");
     var passwordInput = document.getElementById("Password");
-    alert(userInput.value);
-    alert(passwordInput.value);
-
     var user = {
-        UserName: userInput,
-        Password: passwordInput
+        UserName: userInput.value,
+        Password: passwordInput.value
     };
 
-    console.log(user);
 
-    fetch("/Home/Login", {
+    fetch("/Home/LogUser", {
         method: "POST",
-        cache: "no-cache"
-    });
+        cache: "no-cache",
+        headers: {
+            'Content-Type': "application/json; charset=UTF-8"
+        },
+        body: JSON.stringify(user)
+
+    }).then(response => response.text())
+      .then(data => alert(data));
+
 }

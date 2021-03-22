@@ -39,14 +39,18 @@ namespace MyGramProject1.Controllers
         }
 
 
+
         public IActionResult LogUser(string User, string Password)
         {
-            string result = $"The user is {User} and the password is {Password}";
+            string result = $"User is: {User} from form and the password is {Password} from form";
 
             return Content(result);
         }
 
        
+
+
+
 
 
 

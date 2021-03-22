@@ -705,3 +705,4 @@
 /Users/krismelendez/Desktop/New Gram/MyGramProject1/MyGramProject1/obj/Debug/netcoreapp3.1/Razor/Views/Home/Register.cshtml.g.cs
 /Users/krismelendez/Desktop/New Gram/MyGramProject1/MyGramProject1/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_TestView.cshtml.g.cs
 /Users/krismelendez/Desktop/New Gram/MyGramProject1/MyGramProject1/obj/Debug/netcoreapp3.1/Razor/Views/Home/Login.cshtml.g.cs
+/Users/krismelendez/Desktop/New Gram/MyGramProject1/MyGramProject1/obj/Debug/netcoreapp3.1/Razor/Views/Home/LogUser.cshtml.g.cs

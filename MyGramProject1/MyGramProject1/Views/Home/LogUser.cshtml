@@ -1,3 +1,29 @@
-﻿@page
-@{
-}
+﻿<div id="maindiv" class="container">
+    <form action="/Home/Login" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>User:</label>
+                    </td>
+                    <td>
+                        <input name="User" placeholder="Type user name" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password:</label>
+                    </td>
+                    <td>
+                        <input name="Password" placeholder="Type password" type="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="Login">Log In</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
