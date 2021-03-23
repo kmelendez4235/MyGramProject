@@ -101,6 +101,7 @@ for (var i = 0; i < cart.length; i++) {
     span = document.createElement("span");
     span.innerHTML = image.imageName.toString();
     span.className = "CustomImages";
+    span.setAttribute("data-image-info", JSON.stringify(image));
     td.appendChild(span);
     tr.appendChild(td);
 
@@ -146,9 +147,26 @@ myDiv.appendChild(newSpan);
 var imageArray = document.getElementsByClassName("CustomImages");
 for (var element in imageArray) {
     imageArray[element].onclick = function () {
-      alert("This is an image");
+        var image = this.getAttribute("data-image-info");
+
+        console.log(image); 
+
+        fetch("/Home/SaveImage", {
+            method: "POST",
+            cache: "no-cache",
+            headers: {
+                'Content-Type': "application/json; charset=UTF-8"
+            },
+            body:image
+
+        }).then(response => response.text())
+            .then(data => alert(data));
+
+   
     }
 }
+
+
 
 
 var select = document.getElementById("theme");
@@ -158,7 +176,7 @@ var select = document.getElementById("theme");
 
 
 
-
+//M14
 
 
     

@@ -47,8 +47,22 @@ namespace MyGramProject1.Controllers
             return Content(result);
         }
 
-       
+        public IActionResult Login([FromBody] User user)
+        {
+            return Content(user.ToString());
+        }
 
+
+
+        public IActionResult SaveImage([FromBody] Image image)
+        {
+            return Content(image.ToString());
+        }
+
+        public IActionResult Saveregister([FromBody] User user)
+        {
+            return Content(user.ToString());
+        }
 
 
 
